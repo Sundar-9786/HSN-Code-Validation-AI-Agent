@@ -1,0 +1,32 @@
++-------------------------+
+|   User Input (Text)     |
++-----------+-------------+
+            |
+            v
++-------------------------+
+|   Dialogflow Agent      |
+| - Intents (Single/Multiple) |
+| - Entity: @hsn_code     |
++-----------+-------------+
+            |
+            v
++-------------------------+
+|   Webhook (Flask API)   |
+| - app.py                |
+| - Calls validation.py   |
+| - Reads HSN_SAC.xlsx    |
++-----------+-------------+
+            |
+            v
++-------------------------+
+|   Validation Logic      |
+| - Format Check          |
+| - Existence Check       |
+| - Hierarchical Fallback |
++-----------+-------------+
+            |
+            v
++-------------------------+
+|   Response to Dialogflow |
+| (Text with ✅ or ❌)       |
++-------------------------+
